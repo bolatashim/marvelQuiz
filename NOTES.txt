@@ -1,0 +1,5 @@
+Things to do
+
+-- Need to cover the screen with "Loading" animation upon launch while the images are being loaded
+-- Once the game ends, a restart button should appear to make another quiz
+-- Work on how the score appears upon finishing the quiz
