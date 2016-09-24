@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MarvelQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Marvel Character is on the Picture above?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rym-pU-VWy">
+                                <rect key="frame" x="75" y="500" width="450" height="26"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOQ-Kk-VBY" userLabel="Button 1">
+                                <rect key="frame" x="75" y="534" width="450" height="42"/>
+                                <color key="backgroundColor" white="0.85991379310344829" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleColor" red="0.88235294117647056" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.041046944600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="optionOnePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29b-MD-ow7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbi-QH-AG9" userLabel="Button 2">
+                                <rect key="frame" x="75" y="586" width="450" height="42"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button2">
+                                    <color key="titleColor" red="0.88235294117647056" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.041046944600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="optionTwoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SAU-AY-WtQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0 / 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvI-NJ-0tE" userLabel="Score count">
+                                <rect key="frame" x="180" y="17" width="240" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="h6U-2L-zBe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-1S-YAn" userLabel="Button 3">
+                                <rect key="frame" x="75" y="638" width="450" height="42"/>
+                                <color key="backgroundColor" red="0.83328737745098036" green="0.83328737745098036" blue="0.83328737745098036" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button3">
+                                    <color key="titleColor" red="0.88235294117647056" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.041046944600000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="optionThreePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqh-jB-KH2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIu-Ie-XQb">
+                                <rect key="frame" x="75" y="37" width="450" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PIu-Ie-XQb" secondAttribute="height" multiplier="1:1" id="gIN-Ma-Hdl"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="30" left="30" bottom="30" right="8"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVW-dL-Mcf">
+                                <rect key="frame" x="104" y="89" width="388" height="325"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pbi-QH-AG9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2PW-xX-avx"/>
+                            <constraint firstItem="qDN-1S-YAn" firstAttribute="width" secondItem="pbi-QH-AG9" secondAttribute="width" id="5Kf-HZ-h4N"/>
+                            <constraint firstItem="pbi-QH-AG9" firstAttribute="top" secondItem="OOQ-Kk-VBY" secondAttribute="bottom" constant="10" id="6ab-ye-4Ix"/>
+                            <constraint firstItem="OOQ-Kk-VBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7J5-4z-CJl"/>
+                            <constraint firstItem="pbi-QH-AG9" firstAttribute="width" secondItem="OOQ-Kk-VBY" secondAttribute="width" id="7oe-Do-oyU"/>
+                            <constraint firstItem="uVW-dL-Mcf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ewz-8c-K8X"/>
+                            <constraint firstItem="uVW-dL-Mcf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="K1e-ko-Egt"/>
+                            <constraint firstItem="OOQ-Kk-VBY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="R3L-LT-bNh"/>
+                            <constraint firstItem="KvI-NJ-0tE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="17" id="Y9l-HO-P9G"/>
+                            <constraint firstItem="qDN-1S-YAn" firstAttribute="top" secondItem="pbi-QH-AG9" secondAttribute="bottom" constant="10" id="YHI-Ay-6EO"/>
+                            <constraint firstItem="pbi-QH-AG9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="bkF-e5-apc"/>
+                            <constraint firstItem="Rym-pU-VWy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cDF-OM-1nh"/>
+                            <constraint firstItem="KvI-NJ-0tE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="eHW-fw-5il"/>
+                            <constraint firstItem="Rym-pU-VWy" firstAttribute="width" secondItem="PIu-Ie-XQb" secondAttribute="width" id="eQZ-xE-nFk"/>
+                            <constraint firstItem="uVW-dL-Mcf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gac-7h-leN"/>
+                            <constraint firstItem="uVW-dL-Mcf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gs0-Pt-zIR"/>
+                            <constraint firstItem="OOQ-Kk-VBY" firstAttribute="width" secondItem="Rym-pU-VWy" secondAttribute="width" id="iOq-ys-Jnp"/>
+                            <constraint firstItem="KvI-NJ-0tE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgz-f1-jF5"/>
+                            <constraint firstItem="PIu-Ie-XQb" firstAttribute="top" secondItem="KvI-NJ-0tE" secondAttribute="bottom" constant="8" id="kY6-p0-IGM"/>
+                            <constraint firstItem="qDN-1S-YAn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="l3S-d4-juu"/>
+                            <constraint firstItem="PIu-Ie-XQb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="mfR-uM-Mut"/>
+                            <constraint firstItem="Rym-pU-VWy" firstAttribute="top" secondItem="PIu-Ie-XQb" secondAttribute="bottom" constant="8" id="ua2-TH-Exu"/>
+                            <constraint firstItem="PIu-Ie-XQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vjQ-Re-7P2"/>
+                            <constraint firstItem="qDN-1S-YAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wPi-gw-fB1"/>
+                            <constraint firstItem="OOQ-Kk-VBY" firstAttribute="top" secondItem="Rym-pU-VWy" secondAttribute="bottom" constant="8" id="xZn-Sy-2qD"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ScoreWindowAtTheEnd" destination="uVW-dL-Mcf" id="dpi-WT-y0p"/>
+                        <outlet property="buttonOne" destination="OOQ-Kk-VBY" id="IPn-hR-ZRZ"/>
+                        <outlet property="buttonThree" destination="qDN-1S-YAn" id="g7c-iz-BWR"/>
+                        <outlet property="buttonTwo" destination="pbi-QH-AG9" id="qhv-rL-KVv"/>
+                        <outlet property="characterImageView" destination="PIu-Ie-XQb" id="iOp-A7-ufS"/>
+                        <outlet property="playerScore" destination="KvI-NJ-0tE" id="Kzr-pE-oQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="861"/>
+        </scene>
+    </scenes>
+</document>

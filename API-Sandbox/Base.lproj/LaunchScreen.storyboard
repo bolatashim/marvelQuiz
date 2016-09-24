@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="marvel-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Fil-OI-Zhi">
+                                <rect key="frame" x="180" y="242" width="240" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fil-OI-Zhi" secondAttribute="height" multiplier="25:12" id="0Ax-kr-D6x"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="quizy-image" translatesAutoresizingMaskIntoConstraints="NO" id="9eB-lW-3Ze">
+                                <rect key="frame" x="306" y="364" width="168" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9eB-lW-3Ze" secondAttribute="height" multiplier="67:26" id="zob-Ol-5gW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fil-OI-Zhi" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="6AS-vs-F8t"/>
+                            <constraint firstItem="9eB-lW-3Ze" firstAttribute="width" secondItem="Fil-OI-Zhi" secondAttribute="width" multiplier="0.7" id="6N8-mR-Zme"/>
+                            <constraint firstItem="9eB-lW-3Ze" firstAttribute="leading" secondItem="Fil-OI-Zhi" secondAttribute="leading" multiplier="1.7" id="IXy-9i-2MO"/>
+                            <constraint firstItem="Fil-OI-Zhi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ef2-04-qrj"/>
+                            <constraint firstItem="9eB-lW-3Ze" firstAttribute="top" secondItem="Fil-OI-Zhi" secondAttribute="bottom" constant="6" id="m5t-Gu-yKl"/>
+                            <constraint firstItem="Fil-OI-Zhi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="se3-Ag-o6R"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="379"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="marvel-logo" width="200" height="96"/>
+        <image name="quizy-image" width="140" height="50"/>
+    </resources>
+</document>
